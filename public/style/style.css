@@ -1,0 +1,131 @@
+/* Importaciones */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap');
+
+/* Reseteo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generales */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #67666e;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+/* Imágenes */
+
+.logo-small {
+    height: 50px;
+}
+
+/* Nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    background-color: white;
+    box-shadow: 0 2px 4px grey;
+    transition: all 500ms ease-in-out;
+}
+
+nav.white {
+    background-color: transparent;
+    box-shadow: initial;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #67666e;
+    text-decoration: none;
+    font-size: 1.4em;
+    margin: 0 0.5em;
+    padding-bottom: 0.3em;
+}
+
+nav.white ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    border-bottom: 1.5px solid #67666e;
+}
+
+nav.white ul li a:hover {
+    border-bottom: 1.5px solid white;
+}
+
+nav ul li a.active {
+    border-bottom: 1.5px solid #67666e;
+}
+
+nav.white ul li a.active {
+    border-bottom: 1.5px solid white;
+}
+
+/* Hero */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/windrader-1639567_1920.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero .titles {
+    color: white;
+    margin-bottom: 8em;
+    border-left: 4px solid white;
+    padding-left: 2em;
+}
+
+.hero .titles h1 {
+    font-size: 4em;
+}
+
+.hero .titles h2 {
+    font-size: 3em;
+}
+
+/* Layout */
+
+.fila {
+    width: 100%;
+    display: flex;
+    padding: 0.5em;
+}
+
+.col-100 {
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
