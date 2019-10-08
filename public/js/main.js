@@ -15,5 +15,6 @@ $(document).ready(function (){
     // Menú lateral
     $('.burger').click(function(){
         $('.burger').toggleClass('open');
+        $('aside').toggleClass('open');
     });
-});
+});    
