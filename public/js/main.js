@@ -6,8 +6,14 @@ $(document).ready(function (){
         console.log(positionDocument);
         if (positionDocument > positionParagraph.top - 60) {
             $('nav').removeClass('white');
+            $('.burger').removeClass('white');
         } else {
             $('nav').addClass('white');
+            $('.burger').addClass('white');
         }
+    });
+    // Menú lateral
+    $('.burger').click(function(){
+        $('.burger').toggleClass('open');
     });
 });
