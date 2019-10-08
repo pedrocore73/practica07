@@ -17,6 +17,11 @@ body {
     color: #67666e;
 }
 
+header {
+    margin-top: 80px;
+    padding: 0.5em;
+}
+
 h1 {
     font-family: 'Oswald', sans-serif;
 }
@@ -187,6 +192,7 @@ aside .item a:hover, aside .item a.active {
 /* Hero */
 
 .hero {
+    margin-top: 0;
     width: 100vw;
     height: 100vh;
     background-image: url('../img/windrader-1639567_1920.jpg');
